@@ -7,3 +7,4 @@ Build.PL
 lib/PerlIO/via/gzip.pm
 t/001_roundtrip.t
 META.yml
+Makefile.PL

@@ -19,7 +19,7 @@ for (0..1000) {
     print $tmph rand(),"\n";
 }
 print $tmph $last, "\n";
-ok $tmph->close, "put the lid down and flush";
+ok $tmph->close, "flush and put the lid down";
 my $data;
 gunzip $tmpf => \$data;
 is( (split m{$/},$data)[0], $first, "first entry roundtrip" );
