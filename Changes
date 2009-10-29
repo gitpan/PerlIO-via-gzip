@@ -1,4 +1,6 @@
 Revision history for Perl module PerlIO::via::gzip
+0.021 Thu Oct 29 12:53:00 2009
+    - Include PerlIO::Util requirement in Build.PL
 0.02 Wed Oct 28 15:31:00 2009
     - fix perl requirement in Build.PL
     - refactor using IO::Compress::Gzip & IO::Uncompress::Gunzip

@@ -7,7 +7,7 @@ use PerlIO::Util;
 use IO::Compress::Gzip qw(:constants);
 use IO::Uncompress::Gunzip;
 use Carp;
-our $VERSION = '0.02';
+our $VERSION = '0.021';
 our $COMPRESSION_LEVEL = Z_DEFAULT_COMPRESSION;
 our $COMPRESSION_STRATEGY = Z_DEFAULT_STRATEGY;
 our $BLOCK_SIZE = 4096;
@@ -89,7 +89,6 @@ sub Write {
     }
     elsif ($self->{gzip}) {
 	return $self->{gzip}->print($buf);
-	return $self->{gzip}->write($buf);
     }
     else {
 	croak "via(gzip) [WRITE]: handle not initialized";

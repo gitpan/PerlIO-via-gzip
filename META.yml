@@ -1,6 +1,6 @@
 ---
 name: PerlIO-via-gzip
-version: 0.02
+version: 0.021
 author: []
 abstract: PerlIO layer for gzip (de)compression
 license: perl
@@ -9,6 +9,7 @@ resources:
 requires:
   IO::Compress::Gzip: 2
   IO::Uncompress::Gunzip: 2
+  PerlIO::Util: 0
   perl: 5.01
 build_requires:
   Module::Build: 0
@@ -16,7 +17,7 @@ build_requires:
 provides:
   PerlIO::via::gzip:
     file: lib/PerlIO/via/gzip.pm
-    version: 0.02
+    version: 0.021
 generated_by: Module::Build version 0.31012
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html

@@ -6,7 +6,8 @@ Module::Build->new
       requires        => {
 	                 perl                  => 5.010,
 			 'IO::Compress::Gzip'  => 2,
-			 'IO::Uncompress::Gunzip'  => 2
+			 'IO::Uncompress::Gunzip'  => 2,
+			 'PerlIO::Util'        => 0
                          },
       build_requires  => {
 	                 'Module::Build'       => 0,
